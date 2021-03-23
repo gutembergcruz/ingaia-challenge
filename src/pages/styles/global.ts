@@ -15,5 +15,6 @@ export default createGlobalStyle`
         background-position: center center;
         background-repeat: no-repeat;
         height: 100vh;
+        font-family: 'Roboto', sans-serif;
     }
 `;

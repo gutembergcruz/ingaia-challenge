@@ -17,7 +17,7 @@ const List: React.FC = () => {
                 </div>
             </Form>
             <Listagem>
-                <article>
+                <article className="found">
                     <img src={placeholder} alt="" />
                     <div>
                         <p>Rick Sanchez</p>

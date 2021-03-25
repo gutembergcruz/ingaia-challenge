@@ -42,3 +42,56 @@ export const Form = styled.form`
         }
     }
 `;
+
+export const Listagem = styled.section`
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+
+    article {
+        width: 225px;
+        height: 225px;
+        overflow: hidden;
+        margin: 1%;
+        position: relative;
+        border-radius: 5px;
+        filter: grayscale(100%);
+        border: 2px solid transparent;
+
+        img{
+            width: 100%;
+        }
+        div{
+            display: block;
+            position: absolute;
+            width: 100%;
+            background-color: rgba(0,0,0,0.5);
+            bottom: 0;
+            padding: 5px 10px;
+
+            p{
+                font-weight: 700;
+                font-size: 20px;
+                color: #fff;
+            }
+            span{
+                font-size: 12px;
+                font-weight: 400;
+                color: #fff;
+            }
+        }
+    }
+    .found{
+        filter: grayscale(0);
+        border: 2px solid #CBD736;
+        transition: 0.3s;
+
+        &:hover{
+            border: 2px solid #9AD736;
+        }
+    }
+`;

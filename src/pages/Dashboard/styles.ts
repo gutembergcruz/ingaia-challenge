@@ -94,4 +94,7 @@ export const Listagem = styled.section`
             border: 2px solid #9AD736;
         }
     }
+    .found-d{
+        display: none;
+    }
 `;

@@ -9,11 +9,7 @@ interface Items {
     name: string;
     species: string;
     image: string;
-}
-interface Found {
-    name: string;
-    species: string;
-    image: string;
+    id: number
 }
 const Dashboard: React.FC = () => {
     const [foundChar, setFoundChar] = useState("");
@@ -40,22 +36,22 @@ const Dashboard: React.FC = () => {
             </Form>
             <Listagem>
                 {characters.map(caracter => (
-                    <article className={caracter.name == foundChar ? "found" : "found-d"}>
+                    <a href="teste" key={caracter.id} className={caracter.name === foundChar ? "found" : "found-d"}>
                         <img src={caracter.image} alt="" />
                         <div>
                             <p>{caracter.name}</p>
                             <span>{caracter.species}</span>
                         </div>
-                    </article>
+                    </a>
                 ))}
                 {characters.map(caracter => (
-                    <article className={caracter.name == foundChar ? "found-d" : ""}>
+                    <a href="teste" key={caracter.id} className={caracter.name === foundChar ? "found-d" : ""}>
                         <img src={caracter.image} alt="" />
                         <div>
                             <p>{caracter.name}</p>
                             <span>{caracter.species}</span>
                         </div>
-                    </article>
+                    </a>
                 ))}
             </Listagem>
             <div>

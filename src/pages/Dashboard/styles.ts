@@ -52,7 +52,7 @@ export const Listagem = styled.section`
     justify-content: space-around; 
     flex-wrap: wrap;
 
-    article {
+    a {
         width: 225px;
         height: 225px;
         overflow: hidden;

@@ -16,5 +16,6 @@ export default createGlobalStyle`
         background-repeat: no-repeat;
         height: 100vh;
         font-family: 'Roboto', sans-serif;
+        background-color: #1E1E1E;
     }
 `;

@@ -3,7 +3,7 @@ import api from '../../services/api';
 
 import logoImg from '../../assets/logo.svg';
 import GlobalStyles from '../styles/global';
-import { Form, Listagem } from './styles';
+import { Form, Listagem, Modal } from './styles';
 
 interface Items {
     name: string;
@@ -54,9 +54,33 @@ const Dashboard: React.FC = () => {
                     </a>
                 ))}
             </Listagem>
-            <div>
-
-            </div>
+            <Modal>
+                <article>
+                    <aside>
+                        <div className="imgFundo">
+                            <img src="https://image.winudf.com/v2/image/Y29tLmFuZHJvbW8uZGV2NjYwNjE0LmFwcDcyNDI1Nl9zY3JlZW5fMF8xNTE1MjA4NTM5XzA4NA/screen-0.jpg?fakeurl=1&type=.jpg" alt="" />
+                        </div>
+                        <div className="imgCard">
+                            <img src="https://image.winudf.com/v2/image/Y29tLmFuZHJvbW8uZGV2NjYwNjE0LmFwcDcyNDI1Nl9zY3JlZW5fMF8xNTE1MjA4NTM5XzA4NA/screen-0.jpg?fakeurl=1&type=.jpg" alt="" />
+                            <span>
+                                <h4>Teste</h4>
+                                <p>Testador</p>
+                            </span>
+                        </div>
+                    </aside>
+                    <main>
+                        <div>
+                            <h3>About</h3>
+                            <p>Rick Sanchez is a male human. He is alive and well. Last seen in May 31, 2020.</p>
+                        </div>
+                        <div>
+                            <h3>Origin</h3>
+                            <span>Planet</span>
+                            
+                        </div>
+                    </main>
+                </article>
+            </Modal>
             <GlobalStyles />
         </>
     );

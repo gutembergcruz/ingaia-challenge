@@ -98,3 +98,92 @@ export const Listagem = styled.section`
         display: none;
     }
 `;
+
+export const Modal = styled.div`
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    article{
+        width: 800px;
+        height: 500px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #000;
+
+        aside{
+            width: 300px;
+            height: 500px;
+            position: relative;
+            border-radius: 10px 0px 0px 10px;
+            
+
+            div.imgFundo{
+                position: absolute;
+                width: 100%;
+                height: 500px;  
+                overflow: hidden;
+                border-radius: 10px 0px 0px 10px;
+                img{
+                    width: 100%;
+                    height: 500px;
+                    filter: blur(25px);
+                    border-radius: 10px 0px 0px 10px;
+                }
+            }
+
+            div.imgCard{
+                position: absolute;
+                top: 50px;
+                left: -100px;
+                width: 300px;
+                height: 400px;
+                border-radius: 10px;
+                
+
+                img{
+                    width: 300px;
+                    height: 400px;
+                    border-radius: 10px;
+                    border: 1px solid #ccc;
+                }
+                span{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        background: #1B1B1B;
+                        height: 60px;
+                        width: 100%;
+                        border-radius: 0px 0px 10px 10px;
+                        padding: 10px;  
+                        border: 1px solid #ccc;
+                        border-top-color: transparent;
+                        h4{
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: #fff;
+                         }
+                         p{ 
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: #fff;
+                          }
+                    }
+            }
+        }
+        main{
+            width: 500px;
+
+        }
+    }
+
+`;

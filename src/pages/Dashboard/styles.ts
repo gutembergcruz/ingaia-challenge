@@ -214,5 +214,4 @@ export const Modal = styled.div`
             }
         }  
     }
-
 `;

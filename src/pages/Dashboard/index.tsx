@@ -76,7 +76,16 @@ const Dashboard: React.FC = () => {
                         <div>
                             <h3>Origin</h3>
                             <span>Planet</span>
-                            
+                            <h4>Earth (Replacement Dimension)</h4>
+                            <p>Replacement Dimension</p>
+                            <span>54 residents</span>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <span>Planet</span>
+                            <h4>Earth (Replacement Dimension)</h4>
+                            <p>Replacement Dimension</p>
+                            <span>54 residents</span>
                         </div>
                     </main>
                 </article>
@@ -85,5 +94,4 @@ const Dashboard: React.FC = () => {
         </>
     );
 };
-
 export default Dashboard;

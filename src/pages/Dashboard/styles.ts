@@ -182,8 +182,37 @@ export const Modal = styled.div`
         }
         main{
             width: 500px;
+            div{
+                    margin-bottom: 40px;
+                    padding: 0 40px;
+                h3{
+                    color: #CBD736;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    font-size: 13px;
+                    letter-spacing: 10px;
+                }
+                p{
+                    font-weight: 300;
+                    color: #f1f1f1;
+                    font-size: 11px;
+                    letter-spacing: 2px;
+                }
+                span{
+                    font-size: 11px;
+                    color: #666;
+                    font-weight: 300;
+                }
+                h4{
+                    font-size: 20px;
+                    color: #fff;
+                    font-weight: 400;
+                }
+                p{
 
-        }
+                }
+            }
+        }  
     }
 
 `;

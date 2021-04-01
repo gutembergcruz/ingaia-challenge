@@ -73,7 +73,7 @@ const Dashboard: React.FC = () => {
                             <h3>About</h3>
                             <p>Rick Sanchez is a male human. He is alive and well. Last seen in May 31, 2020.</p>
                         </div>
-                        <div>
+                        <div> 
                             <h3>Origin</h3>
                             <span>Planet</span>
                             <h4>Earth (Replacement Dimension)</h4>
